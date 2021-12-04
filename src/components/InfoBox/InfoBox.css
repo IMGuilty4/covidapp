@@ -1,0 +1,44 @@
+.infoBox{
+    min-width: 30%;
+    cursor: pointer;
+}
+
+.infoBox:not(:last-child) {
+    margin-right: 15px;
+}
+
+.infoBox--selected {
+    border: 1px solid #4A934A
+}
+
+.infoBox__cases {
+    color: #CC1035;
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.infoBox--red {
+    border-color: #CC1035;
+  }
+  
+.infoBox__cases--green {
+    color: #4A934A !important;
+    border-color: #4A934A !important;
+}
+
+.infoBox__total {
+    color: #6A6D6D;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+@media (max-width: 990px) {
+    .infoBox {
+        width: 100%;
+    }
+    .infoBox:not(:last-child) {
+        margin-right: unset;
+    }
+}

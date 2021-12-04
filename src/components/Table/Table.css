@@ -1,0 +1,24 @@
+.table {
+    margin-top: 20px;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 400px;
+    color: #6A6D6D;
+}
+
+.table ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.table li {
+    padding: 0.5rem;
+}
+
+@media (min-width: 775px) {
+    .table {
+     flex: 0.2;
+     flex-direction: column;
+    }
+}

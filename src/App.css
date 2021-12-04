@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+}
+
+body {
+  background-color: #f5f6f6;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__header h1 {
+  color: #fc3c3c;
+}
+
+.app__dropdown {
+  background-color: white;
+  min-width: 100px;
+}
+
+.app__left {
+  width: 65%;
+}
+
+.app__right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.app__right .muiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__graph {
+  flex-grow: 1;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+  .app__right{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .app__left{ 
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 775px) {
+  .app__stats {
+    flex-direction: column;
+  }
+
+  .app__stats div{
+    margin: 5px;
+  }
+
+}
+
+@media (max-width: 525px) {
+  .app__header {
+    flex-direction: column;
+  }
+
+  .app__dropdown {
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+}

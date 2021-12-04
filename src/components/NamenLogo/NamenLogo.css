@@ -1,0 +1,27 @@
+.nl__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nl__container img {
+    height: 50px;
+}
+
+.nl__container h1 {
+    margin-left: 10px;
+}
+
+@media (max-width: 525px) {
+    .nl__container{
+        margin-bottom: 10px;
+    }
+
+    .nl__container img {
+        height: 40px;
+    }
+
+    .nl__container h1 {
+      font-size: 1.6em;
+    }
+  }
